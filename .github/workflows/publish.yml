@@ -81,7 +81,7 @@ jobs:
       - name: Commit changes
         run: |
           git add package.json
-          git commit -m "chore(git-helper): bump version to ${{ steps.version.outputs.new_version }}"
+          git commit -m "🎨 Chore: Bump version to ${{ steps.version.outputs.new_version }}"
           git tag "v${{ steps.version.outputs.new_version }}"
           git push
           git push --tags
